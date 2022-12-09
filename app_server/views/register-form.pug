@@ -1,0 +1,38 @@
+extends layout 
+block content
+  .row.banner
+    .col-12
+      h1 Register Page
+  .mask.d-flex.align-items-center.h-100.gradient-custom-3
+    .container.h-100
+      .row.d-flex.justify-content-center.align-items-center.h-100
+        .col-12.col-md-9.col-lg-7.col-xl-6
+          .card(style='border-radius: 20px;')
+            .card-body.p-5
+              h2.text-uppercase.text-center.mb-5 Create an account
+              form
+                .form-outline.mb-4
+                  input#form3Example1cg.form-control.form-control-lg(type='text')
+                  label.form-label(for='form3Example1cg') Your Name
+                .form-outline.mb-4
+                  input#form3Example3cg.form-control.form-control-lg(type='email')
+                  label.form-label(for='form3Example3cg') Your Email
+                .form-outline.mb-4
+                  input#form3Example4cg.form-control.form-control-lg(type='password')
+                  label.form-label(for='form3Example4cg') Password
+                .form-outline.mb-4
+                  input#form3Example4cdg.form-control.form-control-lg(type='password')
+                  label.form-label(for='form3Example4cdg') Repeat your password
+                .form-check.d-flex.justify-content-center.mb-5
+                  label.form-check-label(for='form2Example3g')
+                    | By registering you agree with all statements in the ToS  
+                    a.text-body(href='#!')
+                      u Terms of service
+                .d-flex.justify-content-center
+                  button.btn.btn-success.btn-block.btn-lg.gradient-custom-4.text-body(type='button') Register
+                p.text-center.text-muted.mt-5.mb-0
+                  | Have already an account? 
+                  a.fw-bold.text-body(href='Login')
+                    u Login here
+
+  

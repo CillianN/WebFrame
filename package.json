@@ -1,0 +1,26 @@
+{
+  "name": "siamsa",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "engines": {
+    "node": "16.18.0",
+    "npm": "8.19.2"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "font-awesome": "^4.7.0",
+    "http-errors": "~1.6.3",
+    "mongodb": "^4.12.1",
+    "mongoose": "^6.7.5",
+    "morgan": "~1.9.1",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "pug": "^3.0.2"
+  }
+}

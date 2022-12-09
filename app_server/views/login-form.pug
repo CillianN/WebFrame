@@ -1,0 +1,27 @@
+extends layout 
+block content
+  .row.banner
+    .col-12
+      h1 Login Page
+  .mask.d-flex.align-items-center.h-100.gradient-custom-3
+    .container.h-100
+      .row.d-flex.justify-content-center.align-items-center.h-100
+        .col-12.col-md-9.col-lg-7.col-xl-6
+          .card(style='border-radius: 20px;')
+            .card-body.p-5
+              h2.text-uppercase.text-center.mb-5 Login to Account
+              form
+                .form-outline.mb-4
+                  input#form3Example3cg.form-control.form-control-lg(type='email')
+                  label.form-label(for='form3Example3cg') Email
+                .form-outline.mb-4
+                  input#form3Example4cg.form-control.form-control-lg(type='password')
+                  label.form-label(for='form3Example4cg') Password
+                .d-flex.justify-content-center
+                  button.btn.btn-success.btn-block.btn-lg.gradient-custom-4.text-body(type='button') Login
+                p.text-center.text-muted.mt-5.mb-0
+                  | Don't Have an Account? 
+                  a.fw-bold.text-body(href='/register')
+                    u Register Here
+
+  

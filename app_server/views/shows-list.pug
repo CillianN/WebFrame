@@ -1,0 +1,25 @@
+extends layout
+
+
+block content
+  .row.banner
+    .col-12
+      h1= pageHeader.title
+        small &nbsp;#{pageHeader.strapline}
+  .row
+    .col-12.col-md-8
+
+      each location in shows
+        .card
+          .card-block
+            h4
+              a(href="/shows")= location.name
+              small &nbsp;
+              span.badge.badge-pill.badge-default.float-right= location.time
+            p.address= location.address
+            .genre
+              each facility in location.genre
+                span.badge.badge-warning= facility
+
+    .col-12.col-md-4
+      p.lead= sidebar

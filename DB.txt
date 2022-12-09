@@ -1,0 +1,63 @@
+mongosh "mongodb+srv://siamsatirecluster.ixjyuq2.mongodb.net/myFirstDatabase" --apiVersion 1 --username cilliann
+310722
+
+use Siamsa
+
+
+
+db.events.insertOne({ 
+name: 'Thats Entertainment Variety Show',
+address: 'Town Park, Tralee, Co. Kerry, V92 XW44',
+rating: 5,
+genre: ['Comedy', 'Dance', 'Music'],
+showTimes: [{
+days: 'Thursday - Saturday',
+opening: '8:00pm',
+closing: '11:00pm',
+closed: false
+}]
+})
+
+db.events.insertOne({ 
+name: 'MAM',
+address: 'Town Park, Tralee, Co. Kerry, V92 XW44',
+rating: 5,
+genre: ['Dance', 'Music'],
+showTimes: [{
+days: 'Thursday - Saturday',
+opening: '8:00pm',
+closing: '10:00pm',
+closed: false
+}]
+})
+
+db.events.insertOne({ 
+name: 'Cultur',
+address: 'Town Park, Tralee, Co. Kerry, V92 XW44',
+rating: 3,
+genre: ['Acting', 'Music'],
+showTimes: [{
+days: 'Thursday - Saturday',
+opening: '8:00pm',
+closing: '11:00pm',
+closed: false
+}]
+})
+
+db.review.insertOne({ 
+author: 'Cillian Nollan',
+rating: 5,
+reviewText: 'Excellent, entertaining',
+createdOn: 'Date: 22/10/22'
+})
+
+db.times.insertOne({
+days: 'Thursday - Saturday',
+opening: '20:00',
+closing: '22:00'
+})
+
+
+db.userAccounts.insertOne({
+username:'cilliann'
+password:'helloWorld12'})
